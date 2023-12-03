@@ -76,9 +76,12 @@
     border-radius: 1rem;
     background: -webkit-gradient(
             linear, left top, left bottom, 
-            from(rgba(17,17,17, 0.7)), to(rgba(17,17,17, 0.7))),
-            url(../assets/home-bg.jpg) no-repeat;
-    background: linear-gradient(rgba(17,17,17, 0.7), rgba(17,17,17, 0.7)), url(../assets/home-bg.jpg);
+            from(rgba(17,17,17, 0.7)), to(rgba(17,17,17, 0.5))),
+            url(../assets/home-bg-02.jpg) no-repeat;
+    background: linear-gradient(
+        rgba(17,17,17, 0.5), 
+        rgba(17,17,17, 0.5)), 
+        url(../assets/home-bg-02.jpg);
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -92,13 +95,43 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 5rem;
+    position: relative;
 }
+.home .social-content {
+    position: absolute;
+    left: 0px;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: lightgreen;
+    width: 60px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.home .social-content .social {
+    flex: 1;
+}
+.home .social-content .social-01 {
+    background-color: orange;
+}
+.home .social-content .social-02 {
+    background-color: blueviolet;
+}
+.home .social-content .social-03 {
+    background-color: greenyellow;
+}
+
 .home .content {
     text-align: center;
 }
+.home .content .btn-home {
+    color: #fff;
+}
 .home .content span {
     font-weight: bolder;
-    color: transparent;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 1.4rem;
     -webkit-text-stroke: 0.1rem #fff;
 }
 .home .content h3 {
@@ -108,7 +141,7 @@
 .home .content p {
     max-width: 60rem;
     margin: 1rem auto;
-    font-size: 1.4ren;
+    font-size: 1.4rem;
     color: #f8f9fc;
     line-height: 2;
     letter-spacing: 1px;

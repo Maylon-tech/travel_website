@@ -102,7 +102,6 @@
     left: 0px;
     transform: translateY(-50%);
     top: 50%;
-    background-color: lightgreen;
     width: 60px;
     height: 120px;
     display: flex;
@@ -110,15 +109,48 @@
 }
 .home .social-content .social {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .4rem;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+.home .social-content .social a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.home .social-content .social-01:hover {
+    background-color: rgba(60, 150, 24, 0.932);
+}
+.home .social-content .social-02:hover {
+    background-color: rgba(36, 110, 179, 0.932);
+}
+.home .social-content .social-03:hover {
+    background-color: rgb(218, 13, 47);
+}
+
+.social-content .social:hover .whats,
+.social-content .social:hover .face,
+.social-content .social:hover .yout {
+    color: white;
+}
+
+.home .social-content .social .fa-brands {
+    font-size: 2rem;
 }
 .home .social-content .social-01 {
-    background-color: orange;
+    background-color: #eee;
 }
+.home .social-content .social-01:hover {
+
+}
+
 .home .social-content .social-02 {
-    background-color: blueviolet;
+    background-color: #eee;
 }
 .home .social-content .social-03 {
-    background-color: greenyellow;
+    background-color: #eee;
 }
 
 .home .content {
@@ -152,7 +184,7 @@
 .book-form {
     width: 80%;
     margin: 1rem auto;
-    margin-top: -5rem;
+    margin-top: 2rem;
     background: #eee;
     border-radius: 1rem;
     -webkit-box-shadow: 0 0.5rem rgba(17,17,17, 0.3);
